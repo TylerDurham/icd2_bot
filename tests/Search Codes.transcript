@@ -1,0 +1,482 @@
+[
+  {
+    "type": "conversationUpdate",
+    "membersAdded": [
+      {
+        "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+        "name": "Bot"
+      }
+    ],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "id": "f36b4574-6cee-11e8-84e6-3d027ed5ecdd",
+    "localTimestamp": "2018-06-10T15:43:37-05:00",
+    "recipient": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "timestamp": "2018-06-10T20:43:37.671Z",
+    "from": {
+      "id": "default-user",
+      "name": "User"
+    },
+    "serviceUrl": "https://847e2387.ngrok.io"
+  },
+  {
+    "type": "conversationUpdate",
+    "membersAdded": [
+      {
+        "id": "default-user",
+        "name": "User"
+      }
+    ],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "id": "f36b6c80-6cee-11e8-84e6-3d027ed5ecdd",
+    "localTimestamp": "2018-06-10T15:43:37-05:00",
+    "recipient": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "timestamp": "2018-06-10T20:43:37.672Z",
+    "from": {
+      "id": "default-user",
+      "name": "User"
+    },
+    "serviceUrl": "https://847e2387.ngrok.io"
+  },
+  {
+    "type": "message",
+    "text": "search codes \"central nervous system\"",
+    "from": {
+      "id": "default-user",
+      "name": "User"
+    },
+    "locale": "en-US",
+    "textFormat": "plain",
+    "timestamp": "2018-06-10T20:43:47.778Z",
+    "channelData": {
+      "clientActivityId": "1528663417651.050679034739278706.0"
+    },
+    "entities": [
+      {
+        "type": "ClientCapabilities",
+        "requiresBotState": true,
+        "supportsTts": true,
+        "supportsListening": true
+      }
+    ],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "id": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+    "localTimestamp": "2018-06-10T15:43:47-05:00",
+    "recipient": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "https://847e2387.ngrok.io"
+  },
+  {
+    "type": "message",
+    "text": "Searching codes for \"central nervous system\". Please wait.",
+    "locale": "en-US",
+    "localTimestamp": "2018-06-10T15:43:48-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "inputHint": "acceptingInput",
+    "id": "f9b6c081-6cee-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:43:48.232Z"
+  },
+  {
+    "type": "event",
+    "name": "debug",
+    "value": [
+      {
+        "type": "log",
+        "timestamp": 1528663427786,
+        "level": "info",
+        "msg": "UniversalBot(\"*\") routing \"search codes \"central nervous system\"\" from \"emulator\"",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663427788,
+        "level": "info",
+        "msg": "Library(\"*\").findRoutes() explanation:\n\tGlobalAction(1)",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663427789,
+        "level": "info",
+        "msg": "Session.beginDialog(*:searchCodes)",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663427790,
+        "level": "info",
+        "msg": "waterfall() step 1 of 1",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663427791,
+        "level": "info",
+        "msg": "Session.send()",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663428047,
+        "level": "info",
+        "msg": "Session.sendBatch() sending 1 message(s)",
+        "args": []
+      }
+    ],
+    "relatesTo": {
+      "id": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+      "channelId": "emulator",
+      "user": {
+        "id": "default-user",
+        "name": "User"
+      },
+      "conversation": {
+        "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+      },
+      "bot": {
+        "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+        "name": "Bot",
+        "role": "bot"
+      },
+      "serviceUrl": "https://847e2387.ngrok.io"
+    },
+    "text": "Debug Event",
+    "localTimestamp": "2018-06-10T15:43:48-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "id": "f9d06301-6cee-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:43:48.400Z"
+  },
+  {
+    "type": "message",
+    "text": "Here are your results for \"central nervous system\": \n* A81: Atypical virus infections of central nervous system\n\n* A818: Other atypical virus infections of central nervous system\n\n* A8189: Other atypical virus infections of central nervous system\n\n* A819: Atypical virus infection of central nervous system - unsp\n\n* A88: Oth viral infections of central nervous system - NEC\n\n* A888: Other specified viral infections of central nervous system\n\n* A89: Unspecified viral infection of central nervous system\n\n* B690: Cysticercosis of central nervous system\n\n* B900: Sequelae of central nervous system tuberculosis\n\n* C729: Malignant neoplasm of central nervous system - unspecified\n\n* D33: Benign neoplasm of brain and oth prt central nervous system\n\n* D337: Benign neoplasm of oth parts of central nervous system\n\n* D339: Benign neoplasm of central nervous system - unspecified\n\n* D438: Neoplasm of uncertain behavior of prt central nervous system\n\n* G09: Sequelae of inflammatory diseases of central nervous system\n\n* G37: Other demyelinating diseases of central nervous system\n\n* G370: Diffuse sclerosis of central nervous system\n\n* G374: Subacute necrotizing myelitis of central nervous system\n\n* G375: Concentric sclerosis [Balo] of central nervous system\n\n* G378: Oth demyelinating diseases of central nervous system\n\n* G379: Demyelinating disease of central nervous system - unspecified\n\n* G96: Other disorders of central nervous system\n\n* G968: Other specified disorders of central nervous system\n\n* G969: Disorder of central nervous system - unspecified\n\n* P11: Other birth injuries to central nervous system\n\n* P119: Birth injury to central nervous system - unspecified\n\n* Z8661: Personal history of infections of the central nervous system",
+    "locale": "en-US",
+    "localTimestamp": "2018-06-10T15:44:17-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "inputHint": "acceptingInput",
+    "id": "0ae5dc61-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:44:17.062Z"
+  },
+  {
+    "type": "event",
+    "name": "debug",
+    "value": [
+      {
+        "type": "log",
+        "timestamp": 1528663456681,
+        "level": "info",
+        "msg": "Session.endDialog()",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663456932,
+        "level": "info",
+        "msg": "Session.sendBatch() sending 1 message(s)",
+        "args": []
+      }
+    ],
+    "relatesTo": {
+      "id": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+      "channelId": "emulator",
+      "user": {
+        "id": "default-user",
+        "name": "User"
+      },
+      "conversation": {
+        "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+      },
+      "bot": {
+        "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+        "name": "Bot",
+        "role": "bot"
+      },
+      "serviceUrl": "https://847e2387.ngrok.io"
+    },
+    "text": "Debug Event",
+    "localTimestamp": "2018-06-10T15:44:17-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "id": "0b02da40-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "f9717a20-6cee-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:44:17.252Z"
+  },
+  {
+    "type": "message",
+    "text": "search codes diabetes right eye",
+    "from": {
+      "id": "default-user",
+      "name": "User"
+    },
+    "locale": "en-US",
+    "textFormat": "plain",
+    "timestamp": "2018-06-10T20:45:00.762Z",
+    "channelData": {
+      "clientActivityId": "1528663417651.050679034739278706.2"
+    },
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "id": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+    "localTimestamp": "2018-06-10T15:45:00-05:00",
+    "recipient": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:62704"
+  },
+  {
+    "type": "message",
+    "text": "Searching codes for diabetes right eye. Please wait.",
+    "locale": "en-US",
+    "localTimestamp": "2018-06-10T15:45:01-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "inputHint": "acceptingInput",
+    "id": "2519ee01-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:45:01.024Z"
+  },
+  {
+    "type": "event",
+    "name": "debug",
+    "value": [
+      {
+        "type": "log",
+        "timestamp": 1528663500766,
+        "level": "info",
+        "msg": "UniversalBot(\"*\") routing \"search codes diabetes right eye\" from \"emulator\"",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663500767,
+        "level": "info",
+        "msg": "Library(\"*\").findRoutes() explanation:\n\tGlobalAction(1)",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663500767,
+        "level": "info",
+        "msg": "Session.beginDialog(*:searchCodes)",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663500767,
+        "level": "info",
+        "msg": "waterfall() step 1 of 1",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663500767,
+        "level": "info",
+        "msg": "Session.send()",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663501021,
+        "level": "info",
+        "msg": "Session.sendBatch() sending 1 message(s)",
+        "args": []
+      }
+    ],
+    "relatesTo": {
+      "id": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+      "channelId": "emulator",
+      "user": {
+        "id": "default-user",
+        "name": "User"
+      },
+      "conversation": {
+        "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+      },
+      "bot": {
+        "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+        "name": "Bot",
+        "role": "bot"
+      },
+      "serviceUrl": "http://localhost:62704"
+    },
+    "text": "Debug Event",
+    "localTimestamp": "2018-06-10T15:45:01-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "id": "251ad860-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:45:01.030Z"
+  },
+  {
+    "type": "message",
+    "text": "Here are your results for diabetes right eye: \n* E083551: Diabetes with stable prolif diabetic retinopathy - right eye\n\n* E103551: Type 1 diabetes with stable prolif diabetic rtnop - right eye\n\n* E083211: Diabetes with mild nonp rtnop with macular edema - right eye\n\n* E113551: Type 2 diabetes with stable prolif diabetic rtnop - right eye\n\n* E133551: Oth diabetes with stable prolif diabetic rtnop - right eye",
+    "locale": "en-US",
+    "localTimestamp": "2018-06-10T15:45:01-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "inputHint": "acceptingInput",
+    "id": "257eca51-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:45:01.685Z"
+  },
+  {
+    "type": "event",
+    "name": "debug",
+    "value": [
+      {
+        "type": "log",
+        "timestamp": 1528663501431,
+        "level": "info",
+        "msg": "Session.endDialog()",
+        "args": []
+      },
+      {
+        "type": "log",
+        "timestamp": 1528663501682,
+        "level": "info",
+        "msg": "Session.sendBatch() sending 1 message(s)",
+        "args": []
+      }
+    ],
+    "relatesTo": {
+      "id": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+      "channelId": "emulator",
+      "user": {
+        "id": "default-user",
+        "name": "User"
+      },
+      "conversation": {
+        "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+      },
+      "bot": {
+        "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+        "name": "Bot",
+        "role": "bot"
+      },
+      "serviceUrl": "http://localhost:62704"
+    },
+    "text": "Debug Event",
+    "localTimestamp": "2018-06-10T15:45:01-05:00",
+    "from": {
+      "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "recipient": {
+      "id": "default-user",
+      "role": "user"
+    },
+    "id": "257f6691-6cef-11e8-84e6-3d027ed5ecdd",
+    "replyToId": "24f1f3a0-6cef-11e8-84e6-3d027ed5ecdd",
+    "channelId": "emulator",
+    "conversation": {
+      "id": "f3683830-6cee-11e8-bf55-9d7546b1f866|livechat"
+    },
+    "timestamp": "2018-06-10T20:45:01.689Z"
+  }
+]

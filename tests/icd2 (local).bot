@@ -1,0 +1,15 @@
+{
+    "name": "icd2 (local)",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "bc76bce0-6cec-11e8-9ebe-194e2ff7fec8",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "icd2-bot",
+    "scripts": {
+        "start": "node app.js",
+        "watch": "nodemon"
+    },
+    "dependencies": {
+        "adaptivecards": "^1.0.0",
+        "axios": "^0.18.0",
+        "botbuilder": "^3.15.0",
+        "botbuilder-azure": "^3.1.0",
+        "dotenv": "^2.0.0",
+        "restify": "^4.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^6.0.52",
+        "@types/restify": "^2.0.35",
+        "nodemon": "^1.17.5"
+    }
+}
