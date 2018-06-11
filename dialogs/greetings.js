@@ -20,7 +20,7 @@ const greetings = {
             \n\t search codes edema orbit
             \n\t search codes obstruction newborn
             \n
-            \n You can also search for prhases by closing in quotes:
+            \n You can also search for phrases by closing in quotes:
             \n\t search codes "central nervous system"
             \n
             \n You can also combine keywords and phrases:
