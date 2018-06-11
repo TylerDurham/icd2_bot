@@ -23,15 +23,24 @@ const searchCodes = {
             axios.default.get(url)
                 .then((response) => {
                
-                var codes = JSON.parse(response.data);
-                var list = [];
-                codes.codes.forEach(code => {
-                    list.push(`\n* ${code.code}: ${code.description}`);
-                });
-                var msg = 'Here are your results for *' + keywords + ':* \n\n' + list.join('\n');
-                session.endDialog(msg);
-                util.log(`Finished executing searchCodes.`);
-            })
+                    var codes = JSON.parse(response.data);
+                    var count = codes.codes.length;
+                    util.log(`${count} codes retreived from service.`);
+
+                    if(count < 1) {
+                        var msg = `Sorry! I found 0 results for *${keywords}. Please try another search.`
+                        session.endDialog(msg);
+                    } else {
+                        var list = [];
+                        codes.codes.forEach(code => {
+                            list.push(`\n* ${code.code}: ${code.description}`);
+                        });
+                        var msg = `Success! Here are ${count} results for *${keywords}:* \n\n` + list.join('\n');
+                        session.endDialog(msg);
+                    }
+
+                    util.log(`Finished executing searchCodes.`);
+                })
                 .catch((err) => {
                 console.log(err);
                 session.endDialog(`An error has occured: ${err}.`);
