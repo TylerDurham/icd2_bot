@@ -2,7 +2,7 @@
     "name": "icd2-bot",
     "scripts": {
         "start": "node app.js",
-        "watch": "nodemon"
+        "watch": "nodemon app.js"
     },
     "dependencies": {
         "adaptivecards": "^1.0.0",

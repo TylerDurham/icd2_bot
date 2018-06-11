@@ -11,15 +11,16 @@ const greetings = {
     name: 'greetings',
     waterfall: [
         (session, args, next) => {
-            const botName = 'icd2_bot';
+            const botName = '**ICD2**';
             const description = `Assist users with ICD10 codes.`;
-            session.send(`Hi there! I'm ${botName}`);
-            session.send(`In a nutshell, here's what I can do:\n\n${description}`);
-            builder.Prompts.text(session, `What's your name?`);
-        },
-        (session, results, next) => {
-            session.endConversation(`Welcome, ${results.response}`);
-        },
+            session.send(`Hi there! I'm ${botName}! In a nutshell, I can assist users with finding ICD10 codes.`);
+            var msg = `Here are some sample commands you can use: 
+            \n *search codes "central nervous system"*
+            \n *search codes edema orbit*
+            `;
+
+            session.endDialog(msg);
+        }
     ]
 };
 exports.default = greetings; 
