@@ -17,6 +17,7 @@ const greetings = {
             var msg = `Here are some sample commands you can use: 
             \n search codes "central nervous system"
             \n search codes edema orbit
+            \n search codes obstruction newborn
             `;
 
             session.endDialog(msg);
