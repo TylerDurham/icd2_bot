@@ -15,9 +15,16 @@ const greetings = {
             const description = `Assist users with ICD10 codes.`;
             session.send(`Hi there! I'm ${botName}! In a nutshell, I can assist users with finding ICD10 codes.`);
             var msg = `Here are some sample commands you can use: 
-            \n search codes "central nervous system"
-            \n search codes edema orbit
-            \n search codes obstruction newborn
+            \n
+            \n Query for codes using the command *search codes*, then specifying keywords:
+            \n\t search codes edema orbit
+            \n\t search codes obstruction newborn
+            \n
+            \n You can also search for prhases by closing in quotes:
+            \n\t search codes "central nervous system"
+            \n
+            \n You can also combine keywords and phrases:
+            \n\t search codes "central nervous system" neoplasm
             `;
 
             session.endDialog(msg);
