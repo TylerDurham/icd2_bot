@@ -15,8 +15,8 @@ const greetings = {
             const description = `Assist users with ICD10 codes.`;
             session.send(`Hi there! I'm ${botName}! In a nutshell, I can assist users with finding ICD10 codes.`);
             var msg = `Here are some sample commands you can use: 
-            \n *search codes "central nervous system"*
-            \n *search codes edema orbit*
+            \n search codes "central nervous system"
+            \n search codes edema orbit
             `;
 
             session.endDialog(msg);

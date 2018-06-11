@@ -18,7 +18,7 @@ const searchCodes = {
             var keywords = matches[matches.length - 1];
             console.log(keywords);
             session.send(`Searching codes for *${keywords}*. Please wait...`);
-            var url = `https://icd2functions.azurewebsites.net/api/SearchCodes?code=oJIkArKcpWApzS2xImWgNyOM5xRtUnebTyixbcep7WaGy3WtAghoXg==&k=${keywords}`;
+            var url = `https://icd2functions.azurewebsites.net/api/SearchCodes?code=oJIkArKcpWApzS2xImWgNyOM5xRtUnebTyixbcep7WaGy3WtAghoXg==&k=${encodeURIComponent(keywords)}`;
             util.log(`Calling function at ${url}`);
             axios.default.get(url)
                 .then((response) => {
