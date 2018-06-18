@@ -1,8 +1,11 @@
 {
     "name": "icd2-bot",
+    "main": "app.js",
     "scripts": {
         "start": "node app.js",
-        "watch": "nodemon app.js"
+        "watch": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "azure-publish": "node publish.js"
     },
     "dependencies": {
         "adaptivecards": "^1.0.0",
@@ -15,6 +18,8 @@
     "devDependencies": {
         "@types/node": "^6.0.52",
         "@types/restify": "^2.0.35",
-        "nodemon": "^1.17.5"
+        "nodemon": "^1.17.5",
+        "request": "^2.81.0",
+        "zip-folder": "^1.0.0"
     }
 }

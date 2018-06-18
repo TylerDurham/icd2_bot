@@ -1,16 +1,14 @@
-"use strict";
-/* ----------------------------------------------------------------------------------
-*   Greetings Dialog
-*   Sample dialog to use as a starting spot for creating bots
-*   Or for creating a demo bot
----------------------------------------------------------------------------------- */
-Object.defineProperty(exports, "__esModule", { value: true });
 const builder = require("botbuilder");
+const util = require('../util');
+
 const greetings = {
     id: 'greetings',
     name: 'greetings',
     waterfall: [
         (session, args, next) => {
+            var msg = session.message.text;
+            console.log(msg);
+
             const botName = '**ICD2**';
             const description = `Assist users with ICD10 codes.`;
             session.send(`Hi there! I'm ${botName}! In a nutshell, I can assist users with finding ICD10 codes.`);
