@@ -11,7 +11,7 @@ const searchCodes = {
             var keywords = matches[matches.length - 1];
             util.log(keywords);
             session.send(`Searching codes for *${keywords}*. Please wait...`);
-            var url = `https://icd2functions.azurewebsites.net/api/SearchCodes?code=oJIkArKcpWApzS2xImWgNyOM5xRtUnebTyixbcep7WaGy3WtAghoXg==&k=${encodeURIComponent(keywords)}`;
+            var url = `${process.env.URL_FUNC_SEARCH_CODES}&k=${encodeURIComponent(keywords)}`;
             util.log(`Calling function at ${url}`);
             axios.default.get(url)
                 .then((response) => {

@@ -1,6 +1,6 @@
 # icd2 - HLS Central West ICD10 Bot
 
-![alt text](ICD296x96.png "Logo Title Text 1") 
+![alt text](ICD296x96.png "ICD2 Bot!") 
 
 This bot is a simple demo that allows clinicians to query for ICD10 codes.
 
@@ -17,12 +17,19 @@ This generator provides the following dialog modules:
 - SearchCodes.js
 
 Each dialog module exports an object with three properties to help simplify ading new dialogs to the bot.:
-- **id:** Used for the id
-- **waterfall:** The logic (or waterfall) for the dialog
-- **name:** The intent name for the dialog for triggering
+- **id:** Used for the dialog id.
+- **waterfall:** The logic (or waterfall) for the dialog.
+- **name:** The intent name for the dialog for triggering.
 - **pattern:** A regular expression used for determining user intent.
 
 ## Getting Started
+
+You'll want to review the documentation for the [Bot Framework](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0). I *highly* recommend grabbing one of the simple [sample bots](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-samples?view=azure-bot-service-3.0) and deploying it *before* running ICD2. Do it once, and it will all make since.
+
+You can deploy the bot locally for testing/debugging/development, or you can host anywhere that supports Node JS. When running locally, the following utilities are recommended:
+
+- **[Bot Framework Emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0):** VERY useful tool for chatting with your bot. Provides simple chat interface with inspectors for incoming/outgoing JSON messages. You'll need [NGROK](https://ngrok.com/) to recieve messages.
+- **[NGROK](https://ngrok.com/):** You'll need NGROK for serious testing of your bot.
 
 ### Dependencies
 
