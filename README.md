@@ -1,71 +1,72 @@
-# icd2_bot Bot
+# icd2 - HLS Central West ICD10 Bot
 
-This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com), 
+![alt text](ICD296x96.png "Logo Title Text 1") 
 
-This bot is designed to do the following:
-
-Assist users with ICD10 codes.
-
-## About the generator
-
-The goal of the BotBuilder Yeoman generator is to both scaffold out a bot according to general best practices, and to provide some templates you can use when implementing commonly requested features and dialogs in your bot. As a result, you will notice that all dialogs are located in a folder called `dialogs`, and the one you chose when running the wizard becomes the default (or root) dialog. You are free to use the additional dialogs provided (or delete them) as you see fit.
-
-One thing to note is it's not possible to completely generate a bot or dialog, as the questions you need to ask of your user will vary wildly depending on your scenario. As such, we hope we've given you a good starting point for building your bots with Bot Framework.
+This bot is a simple demo that allows clinicians to query for ICD10 codes.
 
 ### Dialogs
 
-This generator provides the following dialogs:
-- Echo Dialog, for simple bots
+This generator provides the following dialog modules:
+- Greetings.js
+- SearchCodes.js
 
-Each class has three properties to help simplify addition to an existing bot:
-- id: Used for the id
-- waterfall: The logic (or waterfall) for the dialog
-- name: The intent name for the dialog for triggering
-
-You can add a dialog to a bot with the following code:
-
-``` javascript
-// declare your dialog
-
-bot.dialog(dialog.id, dialog.waterfall).triggerAction({ matches: dialog.name });
-```
-
-By using this structure, it would be possible to dynamically load all of the dialogs in the `dialogs` folder, and then add them to the bot.
+Each dialog module exports a class with three properties to help simplify addition to an existing bot:
+- **id:** Used for the id
+- **waterfall:** The logic (or waterfall) for the dialog
+- **name:** The intent name for the dialog for triggering
+- **pattern:** A regular expression used for determining user intent.
 
 ## Getting Started
 
 ### Dependencies
 
+- **[Node JS](http://nodejs.org)** v6.14.3 or higher.
+- **[ICD2 Functions](https://github.com/TylerDurham/icd2_functions)** Azure web functions to search for ICD10 codes.
 - **[Restify](http://restify.com)** Used to host the web service for the bot, and for making REST calls
 - **[dotenv](https://github.com/motdotla/dotenv)** Used to manage environmental variables
 
-### Structure
-
-`app.ts` references the bot and starts a Restify server. `bot.ts` loads the dialog type you selected when running the generator and adds it as the default dialog. `dialogs.ts` contains the list of sample dialogs.
-
 ### Configuring the bot
 
-Update `.env` with the appropriate keys:
+Update `.env` with the appropriate keys OR specifiy in your Azure App settings:
 
-- KBID and SUBSCRIPTION_KEY for QnA Maker
-- LUIS_MODEL_URL for LUIS
-- App ID and Key for registered bots.
+* PORT=3978
+* LOG_PREFIX=[icd2-bot]
+* URL_FUNC_SEARCH_CODES=https://your_url_to_functions_here
+* MICROSOFT_APP_ID=your_bot_app_id_here
+* MICROSOFT_APP_PASSWORD=your_password_here
 
-In the case of LUIS, you will need to update the dialog in `dialogs.ts` to work with the appropriate intent and entities.
+## Sample Queries
 
-### The dialogs
-
-- Echo dialog is designed for simple Hello, World demos and to get you started.
-
-### Running the bot
+To invoke the help dialog, enter the following into the bot:
 
 ```
-tsc
-node app.js
+help 
+```
+
+
+You can query for codes using the command ```search codes```, then specifying keywords:
+
+```
+search codes edema orbit
+
+search codes obstruction newborn
+```
+
+You can also search for phrases by closing in quotes:
+
+```
+search codes "central nervous system"
+```
+
+You can also combine keywords and phrases:
+
+```
+search codes "central nervous system" neoplasm
 ```
 
 ## Additional Resources
 
+- [Microsoft Bot Framework](https://dev.botframework.com).
 - [Microsoft Virtual Academy Bots Course](http://aka.ms/botcourse)
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [LUIS](https://luis.ai)
