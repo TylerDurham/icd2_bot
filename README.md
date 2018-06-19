@@ -4,13 +4,19 @@
 
 This bot is a simple demo that allows clinicians to query for ICD10 codes.
 
-### Dialogs
+### Main Modules
+
+- **app.js:** The entry point for the app.
+- **bot.js:** Bootstraps the bot instance, and sets up dialogs.
+- **util.js:** Utility/helper functions.
+
+### Dialog Modules
 
 This generator provides the following dialog modules:
 - Greetings.js
 - SearchCodes.js
 
-Each dialog module exports a class with three properties to help simplify addition to an existing bot:
+Each dialog module exports an object with three properties to help simplify ading new dialogs to the bot.:
 - **id:** Used for the id
 - **waterfall:** The logic (or waterfall) for the dialog
 - **name:** The intent name for the dialog for triggering
