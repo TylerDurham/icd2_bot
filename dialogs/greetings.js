@@ -4,6 +4,7 @@ const util = require('../util');
 const greetings = {
     id: 'greetings',
     name: 'greetings',
+    pattern: /help/i,
     waterfall: [
         (session, args, next) => {
             var msg = session.message.text;

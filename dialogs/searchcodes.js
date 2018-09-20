@@ -40,6 +40,6 @@ const searchCodes = {
             });
         },
     ],
-    pattern: /^(codes|search codes)\s?(.*)$/gim
+    pattern: /^(codes|search codes)\s?(.*)$/gim   //// /^(codes|search codes)\s?(.*)$/gim
 };
 exports.default = searchCodes;
