@@ -18,6 +18,12 @@ const bot = new builder.UniversalBot(
     searchCodesDialog.default.waterfall
 ).set('storage', inMemoryStorage);
 
+bot.on('incoming', (msg) => {
+    // HACK: Remove new lines, carriage returns, and bot <at> codes
+   util.log(`Cleaning raw message input of \`${msg.text}\``);
+   msg.text = util.cleanRawMessageText(msg.text);
+});
+
 
 // Load dialogs
 bot.dialog(helpDialog.default.id, helpDialog.default.waterfall).triggerAction({ matches: helpDialog.default.pattern });
